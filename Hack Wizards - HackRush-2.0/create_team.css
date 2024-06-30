@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #02ceba;
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    margin-left: 1em;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    padding: 2em;
+}
+
+.create-team {
+    flex: 2;
+    margin-right: 2em;
+}
+
+.create-team h1 {
+    margin-bottom: 1em;
+}
+
+.create-team form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-team form label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.create-team form input,
+.create-team form textarea,
+.create-team form select,
+.create-team form fieldset {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.create-team form button {
+    padding: 0.75em;
+    background-color: #02ceba;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.create-team form button:hover {
+    background-color: #02ceba;
+}
+
+aside {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #02ceba;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin-right: 1em;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}

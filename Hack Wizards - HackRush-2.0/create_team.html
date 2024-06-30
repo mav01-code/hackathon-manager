@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Team - Hack Rush 2.0</title>
+    <link rel="stylesheet" href="create_team.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Hackathon Manager</div>
+        <nav>
+            <ul>
+                <li><a href="student_dashboard.html">Home</a></li>
+                <li><a href="my-teams.html">My Teams</a></li>
+                <li><a href="hackathons.html">Hackathons</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="create-team">
+            <h1>Create a New Team for Hack Rush 2.0</h1>
+            <form id="create-team-form">
+                <label for="team-name">Team Name:</label>
+                <input type="text" id="team-name" name="team-name" required>
+
+                <label for="team-description">Team Description:</label>
+                <textarea id="team-description" name="team-description" required></textarea>
+
+                <label for="team-logo">Team Logo:</label>
+                <input type="file" id="team-logo" name="team-logo">
+
+                <h2>Team Members</h2>
+                
+                <!-- Member 1 -->
+                <h3>Member 1</h3>
+                <label for="roll-no-1">Roll No:</label>
+                <input type="text" id="roll-no-1" name="roll-no-1" required>
+
+                <label for="name-1">Name:</label>
+                <input type="text" id="name-1" name="name-1" required>
+
+                <label for="branch-section-1">Branch-Section:</label>
+                <input type="text" id="branch-section-1" name="branch-section-1" required>
+
+                <label for="email-1">Email:</label>
+                <input type="email" id="email-1" name="email-1" required>
+
+                <label for="mobile-1">Mobile:</label>
+                <input type="text" id="mobile-1" name="mobile-1" required>
+
+                <!-- Member 2 -->
+                <h3>Member 2</h3>
+                <label for="roll-no-2">Roll No:</label>
+                <input type="text" id="roll-no-2" name="roll-no-2" required>
+
+                <label for="name-2">Name:</label>
+                <input type="text" id="name-2" name="name-2" required>
+
+                <label for="branch-section-2">Branch-Section:</label>
+                <input type="text" id="branch-section-2" name="branch-section-2" required>
+
+                <label for="email-2">Email:</label>
+                <input type="email" id="email-2" name="email-2" required>
+
+                <label for="mobile-2">Mobile:</label>
+                <input type="text" id="mobile-2" name="mobile-2" required>
+
+                <!-- Member 3 -->
+                <h3>Member 3</h3>
+                <label for="roll-no-3">Roll No:</label>
+                <input type="text" id="roll-no-3" name="roll-no-3" required>
+
+                <label for="name-3">Name:</label>
+                <input type="text" id="name-3" name="name-3" required>
+
+                <label for="branch-section-3">Branch-Section:</label>
+                <input type="text" id="branch-section-3" name="branch-section-3" required>
+
+                <label for="email-3">Email:</label>
+                <input type="email" id="email-3" name="email-3" required>
+
+                <label for="mobile-3">Mobile:</label>
+                <input type="text" id="mobile-3" name="mobile-3" required>
+
+                <!-- Member 4 -->
+                <h3>Member 4</h3>
+                <label for="roll-no-4">Roll No:</label>
+                <input type="text" id="roll-no-4" name="roll-no-4" required>
+
+                <label for="name-4">Name:</label>
+                <input type="text" id="name-4" name="name-4" required>
+
+                <label for="branch-section-4">Branch-Section:</label>
+                <input type="text" id="branch-section-4" name="branch-section-4" required>
+
+                <label for="email-4">Email:</label>
+                <input type="email" id="email-4" name="email-4" required>
+
+                <label for="mobile-4">Mobile:</label>
+                <input type="text" id="mobile-4" name="mobile-4" required>
+
+                <label for="team-tags">Team Tags:</label>
+                <select id="team-tags" name="team-tags" multiple>
+                    <option value="web-development">Web Development</option>
+                    <option value="mobile-apps">Mobile Apps</option>
+                    <option value="data-science">Data Science</option>
+                    <!-- More tags as needed -->
+                </select>
+
+                <label for="hackathon-selection">Select Hackathon:</label>
+                <select id="hackathon-selection" name="hackathon-selection" required>
+                    <option value="hack-rush-2.0">Hack Rush 2.0</option>
+                    <!-- More hackathons as needed -->
+                </select>
+
+                <fieldset>
+                    <legend>Privacy Settings:</legend>
+                    <label><input type="radio" name="privacy" value="public" checked> Public</label>
+                    <label><input type="radio" name="privacy" value="private"> Private</label>
+                </fieldset>
+
+                <button type="submit">Create Team</button>
+            </form>
+        </section>
+        <aside>
+            <h2>Tips for Creating a Successful Team</h2>
+            <ul>
+                <li>Choose a unique and catchy team name.</li>
+                <li>Provide a detailed and inspiring description.</li>
+                <li>Add members who complement each other's skills.</li>
+                <li>Select relevant tags to attract the right participants.</li>
+                <li>Ensure your team is aligned with the hackathon's goals.</li>
+            </ul>
+            <h2>FAQ</h2>
+            <p><strong>Q:</strong> How do I invite members to my team?<br><strong>A:</strong> Enter their details in the form fields provided.</p>
+            <p><strong>Q:</strong> Can I change the team settings later?<br><strong>A:</strong> Yes, you can update the team settings from your profile.</p>
+        </aside>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </footer>
+    <script>
+        // JavaScript can be added here for form validation and other interactions
+    </script>
+</body>
+</html>

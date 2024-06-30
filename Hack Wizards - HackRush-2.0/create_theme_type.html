@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Theme Type - Hackathon Manager</title>
+    <link rel="stylesheet" href="create_theme_type.css">
+</head>
+<body>
+    <header>
+        <h1>Hackathon Manager</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="view_teams.html">View Teams</a></li>
+                <li><a href="add_members.html">Add Members</a></li>
+                <li><a href="create_theme.html" class="active">Create Theme Type</a></li>
+                <li><a href="submit_project.html">Submit Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="create-theme">
+            <h2>Create Theme Type</h2>
+            <form action="submit_theme.html" method="POST">
+                <div class="form-group">
+                    <label for="theme-name">Theme ID:</label>
+                    <input type="id" id="id" name="id" required>
+                </div>
+                <div class="form-group">
+                    <label for="theme-name">Theme Name:</label>
+                    <input type="text" id="theme-name" name="theme-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="theme-description">Theme Description:</label>
+                    <textarea id="theme-description" name="theme-description" rows="4" required></textarea>
+                </div>
+                <button type="submit">Create Theme</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hackathon Manager</p>
+    </footer>
+</body>
+</html>

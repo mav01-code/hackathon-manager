@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Team Members - Hack Rush 2.0</title>
+    <link rel="stylesheet" href="view_team_members.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Hackathon Manager</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-teams.html">My Teams</a></li>
+                <li><a href="hackathons.html">Hackathons</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="view-team">
+            <h1>Team Details</h1>
+            <div class="team-info">
+                <h2>Team Name: <span id="team-name">Team Alpha</span></h2>
+                <p><strong>Description:</strong> <span id="team-description">This is a description of the team.</span></p>
+                <h2>Members</h2>
+                <div class="members">
+                    <div class="member">
+                        <h3>Member 1</h3>
+                        <p><strong>Roll No:</strong> <span id="roll-no-1">123456</span></p>
+                        <p><strong>Name:</strong> <span id="name-1">John Doe</span></p>
+                        <p><strong>Branch-Section:</strong> <span id="branch-section-1">CSE-A</span></p>
+                        <p><strong>Email:</strong> <span id="email-1">john@example.com</span></p>
+                        <p><strong>Mobile:</strong> <span id="mobile-1">123-456-7890</span></p>
+                    </div>
+                    <div class="member">
+                        <h3>Member 2</h3>
+                        <p><strong>Roll No:</strong> <span id="roll-no-2">654321</span></p>
+                        <p><strong>Name:</strong> <span id="name-2">Jane Smith</span></p>
+                        <p><strong>Branch-Section:</strong> <span id="branch-section-2">CSE-B</span></p>
+                        <p><strong>Email:</strong> <span id="email-2">jane@example.com</span></p>
+                        <p><strong>Mobile:</strong> <span id="mobile-2">098-765-4321</span></p>
+                    </div>
+                    <!-- Add more members as needed -->
+                </div>
+                <h2>Tags</h2>
+                <p><span id="team-tags">Web Development, Mobile Apps</span></p>
+                <h2>Hackathon Participation</h2>
+                <p><span id="hackathon-participation">Hack Rush 2.0</span></p>
+                <button onclick="editTeam()">Edit Team</button>
+            </div>
+        </section>
+        <aside>
+            <h2>Other Teams</h2>
+            <ul>
+                <li><a href="#">Team Alpha</a></li>
+                <li><a href="#">Team Beta</a></li>
+                <!-- Add more teams as needed -->
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </footer>
+    <script>
+        function editTeam() {
+            // Logic to redirect to the edit team page
+            window.location.href = "edit-team.html";
+        }
+    </script>
+</body>
+</html>

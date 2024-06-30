@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Hackathon Manager</title>
+  <link rel="stylesheet" href="admin_dashboard.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Hackathon Manager - Admin</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="create_hackathon.html">Create Hackathon</a></li>
+          <li><a href="view_teams.html">View Teams</a></li>
+          <li><a href="view_team_members.html">View Team Members</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="dashboard">
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <h2>Total Events</h2>
+          <p>12</p>
+        </div>
+        <div class="card">
+          <h2>Total Users</h2>
+          <p>230</p>
+        </div>
+        <div class="card">
+          <h2>Active Participants</h2>
+          <p>150</p>
+        </div>
+        <div class="card">
+          <h2>Pending Requests</h2>
+          <p>5</p>
+        </div>
+      </div>
+
+      <div class="section events">
+        <h2>Manage Events</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Event Name</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hackathon 2024</td>
+              <td>2024-07-01</td>
+              <td>Upcoming</td>
+              <td>
+                <button>Edit</button>
+                <button>Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>AI Challenge</td>
+              <td>2024-08-15</td>
+              <td>Upcoming</td>
+              <td>
+                <button>Edit</button>
+                <button>Delete</button>
+              </td>
+            </tr>
+            <!-- More rows as needed -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section users">
+        <h2>Manage Students</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>john_doe</td>
+              <td>john@example.com</td>
+              <td>Participant</td>
+              <td>
+                <button>Edit</button>
+                <button>Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>jane_smith</td>
+              <td>jane@example.com</td>
+              <td>Organizer</td>
+              <td>
+                <button>Edit</button>
+                <button>Delete</button>
+              </td>
+            </tr>
+            <!-- More rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Hackathon Manager. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

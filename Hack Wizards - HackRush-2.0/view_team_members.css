@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #02ceba;
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    margin-left: 1em;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    padding: 2em;
+}
+
+.view-team {
+    flex: 2;
+    margin-right: 2em;
+}
+
+.view-team h1 {
+    margin-bottom: 1em;
+}
+
+.team-info {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
+.team-info h2 {
+    margin-top: 0;
+}
+
+.team-info p {
+    margin: 0.5em 0;
+}
+
+.team-logo img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.member {
+    flex: 1;
+    min-width: 200px;
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+aside {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #02ceba;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin-right: 1em;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    padding: 0.75em;
+    background-color: #02ceba;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}

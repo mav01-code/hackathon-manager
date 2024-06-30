@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Hackathon - Hackathon Manager</title>
+    <link rel="stylesheet" href="create_hackathon.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Hackathon Manager</div>
+        <nav>
+            <ul>
+                <li><a href="admin_dashboard.html">Home</a></li>
+                <li><a href="hackathons.html">Hackathons</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="create-hackathon">
+            <h1>Create a New Hackathon</h1>
+            <form id="create-hackathon-form">
+                <label for="hackathon-id">Hackathon ID:</label>
+                <input type="id" id="id" name="id" required>
+
+                <label for="hackathon-name">Hackathon Name:</label>
+                <input type="text" id="hackathon-name" name="hackathon-name" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date" required>
+
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date" required>
+
+                <label for="theme">Theme:</label>
+                <select id="tags" name="tags" multiple>
+                    <option value="web-development">Web Development</option>
+                    <option value="mobile-apps">Mobile Apps</option>
+                    <option value="data-science">Data Science</option>
+                    <!-- More tags as needed -->
+                </select>
+
+                <label for="rules">Rules and Guidelines:</label>
+                <textarea id="rules" name="rules" required></textarea>
+
+                <label for="organizer-name">Organizer Name:</label>
+                <input type="text" id="organizer-name" name="organizer-name" required>
+
+                <label for="organizer-email">Organizer Email:</label>
+                <input type="email" id="organizer-email" name="organizer-email" required>
+
+                <label for="organizer-phone">Organizer Phone:</label>
+                <input type="tel" id="organizer-phone" name="organizer-phone" required>
+
+                <label for="venue">Venue:</label>
+                <input type="text" id="venue" name="venue" required>
+
+                <label for="registration-deadline">Registration Deadline:</label>
+                <input type="date" id="registration-deadline" name="registration-deadline" required>
+
+                <fieldset>
+                    <legend>Privacy Settings:</legend>
+                    <label><input type="radio" name="privacy" value="public" checked> Public</label>
+                    <label><input type="radio" name="privacy" value="private"> Private</label>
+                </fieldset>
+
+                <button type="submit">Create Hackathon</button>
+            </form>
+        </section>
+        <aside>
+            <h2>Tips for Organizing a Successful Hackathon</h2>
+            <ul>
+                <li>Define clear goals and objectives.</li>
+                <li>Ensure a detailed and precise description.</li>
+                <li>Provide clear rules and guidelines.</li>
+                <li>Choose relevant tags to attract participants.</li>
+                <li>Plan the schedule and logistics carefully.</li>
+            </ul>
+            <h2>FAQ</h2>
+            <p><strong>Q:</strong> How do I edit a hackathon after creation?<br><strong>A:</strong> You can edit hackathon details from your profile.</p>
+            <p><strong>Q:</strong> Can I make the hackathon private?<br><strong>A:</strong> Yes, you can select the privacy setting during creation.</p>
+        </aside>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </footer>
+    <script>
+        // JavaScript can be added here for form validation and other interactions
+    </script>
+</body>
+</html>
